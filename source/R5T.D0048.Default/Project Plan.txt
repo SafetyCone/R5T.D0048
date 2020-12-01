@@ -1,0 +1,4 @@
+R5T.D0048 - Base service definitions library for program run specific output directory path related services.
+
+Goals
+
