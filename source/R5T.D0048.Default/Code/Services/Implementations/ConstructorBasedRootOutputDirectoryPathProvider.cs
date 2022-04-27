@@ -12,7 +12,8 @@ namespace R5T.D0048.Default
         private string RootOutputDirectoryPath { get; }
 
 
-        public ConstructorBasedRootOutputDirectoryPathProvider(string rootOutputDirectoryPath)
+        public ConstructorBasedRootOutputDirectoryPathProvider(
+            [NotServiceComponent] string rootOutputDirectoryPath)
         {
             this.RootOutputDirectoryPath = rootOutputDirectoryPath;
         }
