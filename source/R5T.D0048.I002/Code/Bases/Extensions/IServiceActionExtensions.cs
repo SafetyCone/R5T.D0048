@@ -11,7 +11,7 @@ namespace R5T.D0048.I002
     public static class IServiceActionExtensions
     {
         /// <summary>
-        /// Adds the <see cref="OutputDirectoryPathProvider"/> implementation of <see cref="IOutputDirectoryPathProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="OutputDirectoryPathProvider"/> implementation of <see cref="IOutputDirectoryPathProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IOutputDirectoryPathProvider> AddOutputDirectoryPathProviderAction(this IServiceAction _,
             IServiceAction<IProcessStartTimeSpecificOutputDirectoryPathProvider> processStartTimeSpecificOutputDirectoryPathProviderAction)

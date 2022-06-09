@@ -11,7 +11,7 @@ namespace R5T.D0048.Default
     public static class IServiceActionExtensions
     {
         /// <summary>
-        /// Adds the <see cref="StaticValuedRootOutputDirectoryPathProvider"/> implementation of <see cref="IRootOutputDirectoryPathProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="StaticValuedRootOutputDirectoryPathProvider"/> implementation of <see cref="IRootOutputDirectoryPathProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IRootOutputDirectoryPathProvider> AddStaticValuedRootOutputDirectoryPathProviderAction(this IServiceAction _)
         {
@@ -20,7 +20,7 @@ namespace R5T.D0048.Default
         }
 
         /// <summary>
-        /// Adds the <see cref="ConstructorBasedRootOutputDirectoryPathProvider"/> implementation of <see cref="IRootOutputDirectoryPathProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="ConstructorBasedRootOutputDirectoryPathProvider"/> implementation of <see cref="IRootOutputDirectoryPathProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IRootOutputDirectoryPathProvider> AddConstructorBasedRootOutputDirectoryPathProviderAction(this IServiceAction _,
             string rootOutputDirectoryPath)
@@ -32,7 +32,7 @@ namespace R5T.D0048.Default
         }
 
         /// <summary>
-        /// Adds the <see cref="OutputFilePathProvider"/> implementation of <see cref="IOutputFilePathProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="OutputFilePathProvider"/> implementation of <see cref="IOutputFilePathProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IOutputFilePathProvider> AddOutputFilePathProviderAction(this IServiceAction _,
             IServiceAction<IOutputDirectoryPathProvider> outputDirectoryPathProviderAction,

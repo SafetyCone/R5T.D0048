@@ -12,7 +12,7 @@ namespace R5T.D0048.D002.I001
     public static class IServiceActionExtensions
     {
         /// <summary>
-        /// Adds the <see cref="ProcessStartTimeSpecificOutputDirectoryPathProvider"/> implementation of <see cref="IProcessStartTimeSpecificOutputDirectoryPathProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="ProcessStartTimeSpecificOutputDirectoryPathProvider"/> implementation of <see cref="IProcessStartTimeSpecificOutputDirectoryPathProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IProcessStartTimeSpecificOutputDirectoryPathProvider> AddProcessStartTimeSpecificOutputDirectoryPathProviderAction(this IServiceAction _,
             IServiceAction<IProcessSpecificOutputDirectoryPathProvider> processSpecificOutputDirectoryPathProviderAction,
@@ -28,7 +28,7 @@ namespace R5T.D0048.D002.I001
         }
 
         /// <summary>
-        /// Adds the <see cref="ProcessSpecificOutputDirectoryPathProvider"/> implementation of <see cref="IProcessSpecificOutputDirectoryPathProvider"/> as a <see cref="ServiceLifetime.Singleton"/>.
+        /// Adds the <see cref="ProcessSpecificOutputDirectoryPathProvider"/> implementation of <see cref="IProcessSpecificOutputDirectoryPathProvider"/> as a <see cref="Microsoft.Extensions.DependencyInjection.ServiceLifetime.Singleton"/>.
         /// </summary>
         public static IServiceAction<IProcessSpecificOutputDirectoryPathProvider> AddProcessSpecificOutputDirectoryPathProviderAction(this IServiceAction _,
             IServiceAction<IProcessDirectoryNameProvider> processDirectoryNameProviderAction,
